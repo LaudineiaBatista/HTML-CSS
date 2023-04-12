@@ -1,0 +1,98 @@
+<meta charset="UTF-8">
+
+<script>
+
+    document.write("Flávio tem " + (2016 - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (2016 - 1996) + " anos");
+    document.write("<br>");
+    document.write("Barney tem " + (2016 - 1976) + " anos");
+    document.write("<br>");
+
+</script>
+<br>
+<meta charset="UTF-8">
+
+Se passar 1 ano, alteramos manualmente o resultado <br>
+<script>
+
+    document.write("Flávio tem " + (2017 - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (2017 - 1996) + " anos");
+    document.write("<br>");
+    document.write("Barney tem " + (2017 - 1976) + " anos");
+    document.write("<br>");
+
+</script>
+<br>
+Este não funciona porque não definimos uma variaável ano. (não será intepretado com uma string porque não está entre aspas.
+<script>
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br>");
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>");
+
+</script>
+
+<br>
+<br>
+<br>
+Incluimos uma variável (var) "ano"  o sinal de igual = significando "recebe".
+<br>
+<script>
+
+    var ano = 2016;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br>");
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>");
+
+</script>
+<br>
+Incluimos uma variável (var) "ano"=2017 e osinal de igual = significando "recebe".
+<br>
+<script>
+
+
+    var ano = 2017;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br>");
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>");
+
+</script>
+<br>
+veremos que nada foi exibido.
+Uncaught ReferenceError: Ano is not defined.Ou seja, Ano não foi definido por esta com letra maiúscula.
+<script>
+
+document.write("Flávio tem " + (Ano - 1977) + " anos");
+
+</script>
+
+<br>
+<script>
+
+    var ano = 2016;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br>");
+
+    ano = 2017;
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>");
+
+</script>
+Aqui não é necessario  colocar "var" ela será colocada somente 1 vez
+O prefixo var só é utilizado ao declararmos a variável pela primeira vez, então não é necessário utilizá-lo ao definirmos um novo valor.

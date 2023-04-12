@@ -1,0 +1,116 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+
+function calculaImc(altura, peso) {
+
+    var imc = peso / (altura * altura);
+    return imc;
+
+}
+
+var imcFlavio = calculaImc(1.71, 73);
+var imcAmigo = calculaImc(1.72, 68);
+
+mostra(imcFlavio);
+mostra(imcAmigo);
+
+
+// fiquei com dúvida: Aula 5 - Video Retorno de funções: o Flavio primeiro mostrou a soma dos imc´s, dele e do amigo. Mas depois fez uma função retorno com os imc´s separados. resposta abaixo:
+
+
+</script>
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+function calculaImc(altura, peso) {
+
+    return peso / (altura * altura);
+}
+
+var imcFlavio = calculaImc(1.71, 73);
+var imcAmigo = calculaImc(1.72, 68);
+var totalImc = imcFlavio + imcAmigo;
+
+document.write("A soma dos imc's é " + totalImc);
+document.write("<br>");
+
+</script>
+
+
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+function calculaImc(altura, peso) {
+
+    return peso / (altura * altura);
+}
+
+var totalImc = calculaImc(1.71, 73) + calculaImc(1.72, 68);
+
+document.write("A soma dos imc's é " + totalImc);
+
+var totalImc = calculaImc(1.71, 73) + calculaImc(1.72, 68);
+
+</script>
+
+<meta charset="UTF-8">
+
+<script>
+  function pulaLinha() {
+    document.write("<br>");
+  }
+
+  function mostra(frase) {
+    document.write(frase);
+  }
+
+  function calculaImc(altura, peso) {
+    return peso / (altura * altura);
+  }
+  mostra("O meu IMC é " + calculaImc(1.63, 48));
+</script>

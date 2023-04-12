@@ -1,0 +1,31 @@
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+}
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+// essas duas funções de cima são essenciais. se não colocar função mostra, não vai mostrar.
+
+    function calculaImc(altura, peso) {
+
+    var imc = peso / (altura* altura) + 1; //coloco +1 ou outro número caso mude o índice. A formula atual nã tem +1.
+        mostra("O imc calculado é " + imc);
+
+}
+
+
+calculaImc(1.71, 73);
+calculaImc(1.72, 68);
+
+
+</script>
